@@ -27,21 +27,21 @@ function InputCard() {
                         <div >
                             <div className='input-row'>
                                 <label >Startkapital</label>
-                                <input defaultValue={initialInvestment} onChange={event => setInitialInvestment(parseFloat(event.target.value))} type="number" />
+                                <input defaultValue={initialInvestment} onChange={event => setInitialInvestment(parseFloat(event.target.value))} type="number" required/>
                             </div>
                             <div>
                                 <label >Erwarteter Gewinn</label>
-                                <input defaultValue={expectedReturn} onChange={event => setExpectedReturn(parseFloat(event.target.value))} type="number" />
+                                <input defaultValue={expectedReturn} onChange={event => setExpectedReturn(parseFloat(event.target.value))} type="number" required/>
                             </div>
-                        </div>
+                        </div>  
                         <div>
                             <div className='input-row'>
                                 <label >Jährliches Investment</label>
-                                <input defaultValue={annualInvestment} onChange={event => setAnnualInvestment(parseFloat(event.target.value))} type="number" />
+                                <input defaultValue={annualInvestment} onChange={event => setAnnualInvestment(parseFloat(event.target.value))} type="number" required/>
                             </div>
                             <div>
                                 <label >Dauer in Jahren</label>
-                                <input defaultValue={duration} onChange={event => setDuration(parseFloat(event.target.value))} type="number" />
+                                <input defaultValue={duration} onChange={event => setDuration(parseFloat(event.target.value))} type="number" required/>
                             </div>
                         </div>
                     </section>

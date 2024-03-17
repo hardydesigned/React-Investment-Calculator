@@ -5,10 +5,10 @@ import InputCard from './InputCard';
 function Header() {
     return (
         <>
-            <div id="header">
+            <header id="header">
                 <img src={headerImage} alt="React Logo" />
                 <h1>React Investment Calculator</h1>
-            </div>
+            </header>
 
         </ >
     )
